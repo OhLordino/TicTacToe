@@ -33,54 +33,54 @@ def disp(st):
         print("-------------")
         if calc==0:
             if (b[calc+1][rem].find(st) is not -1 and b[calc+2][rem].find(st) is not -1):
-                print("Congragulations {s} has won! Column1".format(s=st))
+                print("Congratulations {s} has won! Column1".format(s=st))
                 return 2
         if rem==1:
             if (b[calc][rem-1].find(st) is not -1 and b[calc][rem+1].find(st) is not -1):
-                print("Congragulations {s} has won! Row 2".format(s=st))
+                print("Congratulations {s} has won! Row 2".format(s=st))
                 return 2
         if calc==1:
             if (b[calc-1][rem].find(st) is not -1 and b[calc+1][rem].find(st) is not -1):
-                print("Congragulations {s} has won! Column2".format(s=st))
+                print("Congratulations {s} has won! Column2".format(s=st))
                 return 2
         if calc==2:
             if (b[calc-1][rem].find(st) is not -1 and b[calc-2][rem].find(st) is not -1):
-                print("Congragulations {s} has won! Column3".format(s=st))
+                print("Congratulations {s} has won! Column3".format(s=st))
                 return 2
         if rem==2:
             if (b[calc][rem-1].find(st) is not -1 and b[calc][rem-2].find(st) is not -1):
-                print("Congragulations {s} has won! Row 3".format(s=st))
+                print("Congratulations {s} has won! Row 3".format(s=st))
                 return 2
         if rem==0:
             if (b[calc][rem+1].find(st) is not -1 and b[calc][rem+2].find(st) is not -1):
-                print("Congragulations {s} has won! Row2".format(s=st))
+                print("Congratulations {s} has won! Row2".format(s=st))
                 return 2
         if calc==0 and rem==0:
             if (b[calc+1][rem+1].find(st) is not -1 and b[calc+2][rem+2].find(st) is not -1):
-                print("Congragulations {s} has won! Right diagonal".format(s=st))
+                print("Congratulations {s} has won! Right diagonal".format(s=st))
                 return 2
 
         if calc==1 and rem==1:
             if (b[calc-1][rem-1].find(st) is not -1 and b[calc+1][rem+1].find(st) is not -1):
-                print("Congragulations {s} has won! Right diagonal".format(s=st))
+                print("Congratulations {s} has won! Right diagonal".format(s=st))
                 return 2
 
         if calc==2 and rem==2:
             if (b[calc-1][rem-1].find(st) is not -1 and b[calc-2][rem-2].find(st) is not -1):
-                print("Congragulations {s} has won! Right diagonal".format(s=st))
+                print("Congratulations {s} has won! Right diagonal".format(s=st))
                 return 2
         if calc==0 and rem==2:
             if (b[calc+1][rem-1].find(st) is not -1 and b[calc+2][rem-2].find(st) is not -1):
-                print("Congragulations {s} has won! Left Diagonal".format(s=st))
+                print("Congratulations {s} has won! Left Diagonal".format(s=st))
                 return 2
 
         if calc==2 and rem==0:
             if (b[calc-1][rem+1].find(st) is not -1 and b[calc-2][rem+2].find(st) is not -1):
-                print("Congragulations {s} has won! Left Diagonal".format(s=st))
+                print("Congratulations {s} has won! Left Diagonal".format(s=st))
                 return 2
         if calc==1 and rem==1:
             if (b[calc-1][rem+1].find(st) is not -1 and b[calc+1][rem-1].find(st) is not -1):
-                print("Congragulations {s} has won! Right diagonal".format(s=st))
+                print("Congratulations {s} has won! Right diagonal".format(s=st))
                 return 2
             
         count+=1
@@ -122,14 +122,11 @@ for i in range(0,100):
         num=disp(" X ")
         if num==1:
             continue
-        else:
+        elif num is 5 or num is 2:
             break
     else:
         num=disp(" O ")
         if num==1:
             continue
-        else:
+        elif num is 5 or num is 2:
             break
-
-        
-    
