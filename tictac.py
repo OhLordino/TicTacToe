@@ -122,13 +122,13 @@ for i in range(0,100):
         num=disp(" X ")
         if num==1:
             continue
-        elif num is 5 or num is 2:
+        else:
             break
     else:
         num=disp(" O ")
         if num==1:
             continue
-        elif num is 5 or num is 2:
+        else:
             break
 
         
